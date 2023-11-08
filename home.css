@@ -1,0 +1,351 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ====== HERO SECTION ======  */
+
+.title {
+    font-size: 6rem;
+    font-weight: 400;
+    margin-bottom: .75em;
+}
+
+.highlight-title {
+    text-decoration: underline;
+}
+
+.title, .subtitle {
+    text-align: center;
+}
+
+.subtitle {
+    margin: 1em auto;
+    width: 350px;
+    line-height: 2.2rem;
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+
+
+ /* BOOKING BUTTON */
+
+.cta-btn-booking {
+    display: flex;
+    padding: 1.25em 4.75em;
+    margin: 4em auto;
+    border-radius: var(--btn-border-radius);
+    border-style: none;
+    background-color: #B5838D;
+    color: #F7ECE9;
+    font-family: inherit;
+    text-transform: uppercase;
+    margin-bottom: 10em;
+    transition: 0.4s;
+}
+
+.cta-btn-booking:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+
+
+
+/* ===== CONTENT SECTION ====== */
+
+/* === NEW CSS CODE WITH GRID FOR ALL BLOCKS === */
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 8.3%);
+    grid-template-rows: repeat(12, 8.3%);
+    width: 80%;
+    margin-bottom: 3em;
+    padding: 4em;
+}
+
+.wrapper .block-1-img {
+    grid-column: 2 / 6;
+    grid-row: 2 / 12;
+    width: 800px;
+    border-radius: var(--border-radius-img);
+} 
+
+.wrapper .background-box-1 {
+    grid-column: 6 / 12;
+    grid-row: 1 / 6;
+    background-color: var(--block-1-bg);  
+    border-bottom: 5px solid var(--block-1-border);
+    border-radius: var(--border-radius-img);
+    width: 700px;
+    height: 520px;
+    z-index: -1;   
+}
+
+.wrapper .block-1-subtitle {
+    grid-column: 10 / 12;
+    grid-row: 2 / 3;
+    font-size: 1.5rem;
+    margin-top: .5em;
+}
+
+.wrapper .block-1-p-one {
+    grid-column: 10 / 12;
+    grid-row: 3 / 4;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+
+.wrapper .block-1-p-two {
+    grid-column: 10 / 12;
+    grid-row: 6 / 8;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+
+
+.wrapper .block-2-img {
+    grid-column: 5 / 12;
+    grid-row: 2 / -2;
+    width: 750px;
+    border-radius: var(--border-radius-img);
+} 
+
+.wrapper .background-box-2 {
+    grid-column: 3 / 11;
+    grid-row: 1 / -1;
+    background-color: var(--block-2-bg);
+    border-radius: var(--border-radius-img);
+    z-index: -1;  
+    height: 600px; 
+    border-bottom: 5px solid var(--block-2-border);
+    border-radius: 3rem;
+}
+
+
+.wrapper .block-3-img-left {
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+    margin-left: -4em;
+    margin-top: -1em;
+    width: 280px;
+    border-radius: var(--border-radius-img);
+} 
+
+.wrapper .block-3-img-right {
+    grid-column: 7 / 11;
+    grid-row: 2 / -2;
+    width: 400px;
+    border-radius: var(--border-radius-img);
+} 
+
+.wrapper .background-box-3 {
+    grid-column: 4 / 10;
+    grid-row: 1 / -1;
+    background-color: var(--block-3-bg);
+    width: 650px;
+    height: 600px;
+    border-bottom: 5px solid var(--block-3-border);
+    border-radius: var(--border-radius-img);
+    z-index: -1;
+}
+
+
+
+/* === TEXT PAGE FLOW === */
+
+.text-pageflow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 600px;
+    margin: 0 auto 7em;
+    padding: 2em;
+    
+}
+
+.text-pageflow h3 {
+    font-size: 1.5rem;
+    margin-bottom: .5em;
+}
+
+.text-pageflow p {
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+
+.text-pageflow h3, p { 
+    justify-content: flex-start;
+}
+
+
+
+/* === MEDIA QUERIES === */
+
+@media screen and (min-width: 1780px) {
+
+    body {
+        background-color: whitesmoke;
+    }
+}
+
+
+
+
+/* === PRIOR CSS CODE FOR ALL BLOCKS WITH POSITION PROEPERTY === */
+
+
+/* DOES NOT WORK => AIMS TO CENTER ALL BLOCKS ON THE PAGE */
+/* .flex-wrapper {
+    display: flex;
+    justify-content: center;
+} */
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+
+ 
+/* .block-1, .block-2, .block-3 {
+    position: relative;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}  */
+
+
+/* === BLOCK 1 === 
+
+.block-1 img {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 800px;
+    border-radius: 3rem;
+}
+
+.block-1 .background-box-1 {
+    width: 700px;
+    height: 520px;
+    background-color: var(--block-1-bg);
+    position: absolute;
+    top: 70px;
+    left: 500px;
+    z-index: -1;
+    border-bottom: 5px solid var(--block-1-border);
+    border-radius: 3rem;
+}
+
+.block-1  h3 {
+    position: absolute;
+    top: 105px;
+    left: 950px;
+    z-index: 10;
+    font-size: 1.5rem;
+}
+
+.block-1  p {
+    position: absolute;
+    top: 150px;
+    left: 950px;
+    z-index: 10;
+    width: 200px;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+
+
+
+/* === BLOCK 2 === 
+
+.block-2 img {
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    width: 700px;
+    border-radius: 3rem;
+
+}
+
+.block-2 .background-box-2 {
+    width: 800px;
+    height: 550px;
+    background-color: var(--block-2-bg);
+    position:absolute;
+    top: 120px;
+    left: 300px;
+    z-index: -1;
+    border-bottom: 5px solid var(--block-2-border);
+    border-radius: 3rem;
+
+}
+
+
+
+
+
+/* === BLOCK 3 === 
+
+.block-3 .img-left {
+    position: absolute;
+    top: 170px;
+    left: 350px;
+    width: 280px;
+    border-radius: 3rem;
+
+}
+
+
+.block-3 .img-right {
+    position: absolute;
+    top: 150px;
+    left: 750px;
+    width: 400px;
+    border-radius: 3rem;
+}
+
+.block-3 .background-box-3 {
+    width: 650px;
+    height: 600px;
+    background-color: var(--block-3-bg);
+    position: absolute;
+    top: 120px;
+    left: 400px;
+    z-index: -1;
+    border-bottom: 5px solid var(--block-3-border);
+    border-radius: 3rem;
+}
+
+.block-3  p {
+    position: absolute;
+    top: 620px;
+    left: 490px;
+    z-index: 10;
+    width: 200px;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+
+*/
+ 
+
+
+
+
+
+
+
+
+
+

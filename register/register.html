@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global-styles.css">
+    <link rel="stylesheet" href="register.css"> 
+    <title>Registration & Booking</title> 
+</head>
+<body>
+    
+
+    <!-- NAV SECTION -->  
+    <header>
+        <nav>
+            <h2 class="logo">Yoga Logo</h2>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../register/register.html" >Booking</a></li>
+                    <li><a href="../schedule/schedule.html" >Schedule</a></li>
+                    <li><a href="../contact/contact.html" >Contact</a></li>
+                </ul>
+                <button class="cta-btn-subscribe" type="button">Subscribe</button>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 class="title-register">Book your Class</h1>
+
+
+        <!-- REGISTER FORM -->
+          
+        <form class="register-form" action="/confirmation-page.html">
+
+            <fieldset class="form-wrapper">
+                <legend>Personal Information</legend>
+                <label for="first-name">First Name<span class="required-input">*</span></label>
+                <input 
+                    class="input-100w"
+                    type="text"
+                    name="first-name" 
+                    id="first-name" 
+                    placeholder="Your first name"
+                    required
+                >
+                <label for="last-name">Last Name<span class="required-input">*</span></label>
+                <input 
+                    class="input-100w"
+                    type="text"
+                    name="last-name" 
+                    id="last-name" 
+                    placeholder="Your last name"
+                    required
+                >
+                <label for="email-address">Email<span class="required-input">*</span>
+                    </label>
+                <input 
+                    class="input-100w"
+                    type="email"
+                    name="email-address" 
+                    id="email-address"
+                    placeholder="Your email address"
+                    required 
+                >
+                <label for="birth-date">Birth Date<span class="required-input">*</span></label>
+                <input 
+                    class="input-100w"
+                    type="date"
+                    name="birth-date" 
+                    id="birth-date" 
+                    value="2023-11-06"
+
+                >
+
+            </fieldset> 
+            
+            
+            <!-- BOOKING -->
+
+            <fieldset class="form-wrapper">
+                <legend>Booking</legend>
+                <label for="class-date">Select Date<span class="required-input">*</span></label>
+                <input 
+                    class="input-100w"
+                    type="date"
+                    name="class-date" 
+                    id="class-date" 
+                    value="2023-11-06"
+                >  
+                <label for="select-yoga-class">Select Yoga Class<span class="required-input">*</span></label>
+                <select name="select-yoga-class" id="select-yoga-class">
+                    <option disabled="disabled" selected="selected" value>Choose your favorite class ...</option>
+                    <option value="ashtanga-mysore">Ashtanga Mysore</option>
+                    <option value="ashtanga-led">Ashtanga Led</option>
+                    <option value="yin">Yin Yoga</option>
+                </select>  
+               
+            </fieldset>   
+            
+
+
+            <!-- OTHER INFO & MESSAGE  -->
+
+            <fieldset>
+                <legend>Any Injuries<span class="required-input">*</span></legend>
+
+                <label for="injuries-true">Yes</label>
+                <input 
+                    class="input-radio"
+                    type="radio" 
+                    name="injuries" 
+                    id="injuries-true"
+                    required
+                >
+
+                <label for="injuries-false">No</label>
+                <input 
+                    class="input-radio"
+                    type="radio" 
+                    name="injuries" 
+                    id="injuries-false"
+                    required
+                >
+
+            </fieldset>  
+           
+            <fieldset>
+
+                <label class="label-textarea" for="personal-message">Special requests? Anything you want to tell us?</label>    
+                <textarea
+                    name="personal-message"
+                    id="personal-message"
+                    rows="10"
+                    cols="50"
+                    maxlength="1000"
+                    placeholder="Send us a personal message ..."
+                    >
+                    
+                </textarea>    
+            </fieldset>  
+
+
+            <!-- TERMS & CONDIOTIONS -->
+
+            <fieldset>
+                <legend>Terms & Conditions<span class="required-input">*</span></legend>
+                <p class="terms-conditions-text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                    <br>
+                    <br>
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. 
+                    <br>
+                    <br>
+                    Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.</p>
+                <input 
+                    type="checkbox"
+                    name="accept-terms-conditions"
+                    id="accept-terms-conditions"
+                    required
+                    
+                >
+                    
+                <label class="terms-conditions-label" for="accept-terms-conditions">I accept the terms and conditions</label>
+            </fieldset>
+
+
+            <!-- SUBMIT & RESET BUTTONS -->
+            <div class="btn-wrapper">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset all fields</button>
+            </div>
+            
+        </form>
+    </main>
+
+     <!-- FOOTER SECTION -->
+     <footer class="footer-container">
+        <div class="footer-copyright">
+            <p>© 2023 Ashtanga Yoga</p>
+        </div> 
+        <div class="footer-socials">
+            <p>Instagram</p>
+            <p>Mail</p>
+            <p>LinkedIn</p>
+            <p>DSGVO</p>          
+        </div>     
+    </footer>
+</body>
+</html>

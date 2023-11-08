@@ -1,0 +1,79 @@
+nav {
+    margin-bottom: 6em;
+}
+
+.title-schedule {
+    text-align: center;
+    margin: 0 auto 2em;
+    font-size: 3.3rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
+}
+
+
+
+
+table {
+    margin: 0 auto 12em;
+    table-layout: fixed;
+    width: 50%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: whitesmoke;
+    padding: 30em;
+    border-radius: var(--border-radius-img);
+
+    
+}
+
+thead {
+    padding: 2em;
+}
+
+th {
+    padding: .5em .3em;
+    border-bottom: 1px solid darkgray;
+    letter-spacing: .05rem;
+}
+
+td {
+    width: 30%;
+    padding: .5em .3em;
+    font-size: .9rem;
+    letter-spacing: .05rem;
+}
+
+
+
+
+
+
+.title-classes {
+    margin-bottom: 1.5em;
+}
+
+.class-descriptions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;  
+    font-size: 1.75rem;
+}
+
+.class-descriptions h3 {
+    color: var(--body-textcolor);
+    font-size: 1.75rem;
+    margin-bottom: .3em;
+}
+
+.class-descriptions p {
+    margin-bottom: 2em;
+    color: var(--body-textcolor);
+    font-weight: 300;
+    font-size: 1.15rem;
+    margin-bottom: 4em;
+
+}
