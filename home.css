@@ -9,7 +9,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+
 
 /* ====== HERO SECTION ======  */
 
@@ -196,6 +198,15 @@ body {
 
 .text-pageflow h3, p { 
     justify-content: flex-start;
+}
+
+
+/* === MEDIA QUERIES === */
+
+@media screen and (min-width: 1780px) {
+    body {
+        background-color: #dedcdc;
+    }
 }
 
 

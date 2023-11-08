@@ -10,18 +10,24 @@ nav {
     letter-spacing: .05rem;
 }
 
-
-table {
+.table-container {
     margin: 0 auto 12em;
-    table-layout: fixed;
-    width: 50%;
-    border-collapse: collapse;
-    text-align: left;
+    width: 80%;  
     border-radius: var(--border-radius-img);
     background-color: whitesmoke;
     box-shadow: var(--box-shadow);
-    padding: 5em;
+    padding: 2em;
+
 }
+
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
 
 th {
     padding: .5em .3em;

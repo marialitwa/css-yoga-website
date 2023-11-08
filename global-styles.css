@@ -40,6 +40,7 @@ body {
     color: var(--body-textcolor);
     font-family: "Josefin Sans", sans-serif;
     min-height: 100vh;
+
 }
 
 
@@ -136,7 +137,6 @@ nav a:hover::after {
     display: flex;
     align-items: center; 
     justify-content: flex-start;
-    gap: 2em;
     margin-left: 4em;
 
 } 
@@ -145,8 +145,8 @@ nav a:hover::after {
     display: flex;
     align-items: center; 
     justify-content: flex-end;
-    gap: 2em;
     margin-right: 4em;
+    gap: .5em;
 }
 
 .footer-link {
@@ -154,25 +154,26 @@ nav a:hover::after {
     text-decoration: none;
     color: var(--body-textcolor-dark);
     cursor: pointer;
-    padding: 1em;
+    padding: 1em 1.5em;
     transition: .1s;
 }
 
 .footer-link:hover {
-    background-color: #E5989B;
+    background-color: var(--accent-hover);
+    color: whitesmoke;
     border-radius: 3em;
     transition: .1s;
 }
 
 .mail {
-    padding: 1em 2em;
+    padding: 1em 2.5em;
 }
+
 
 
 /* === MEDIA QUERIES === */
 
 @media screen and (min-width: 1780px) {
-
     body {
         background-color: #dedcdc;
     }
