@@ -12,7 +12,7 @@ nav {
 
 .table-container {
     margin: 0 auto 12em;
-    width: 80%;  
+    width: 60%;  
     border-radius: var(--border-radius-img);
     background-color: whitesmoke;
     box-shadow: var(--box-shadow);
@@ -92,21 +92,7 @@ td {
 .classes-container .item-3 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-
 }
-
-
-
-/* .class-descriptions {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 400px;  
-    font-size: 1.75rem;
-} */
 
 .class-descriptions h3 {
     color: var(--body-textcolor);
@@ -120,3 +106,17 @@ td {
     font-size: 1.15rem;
 
 }
+
+
+
+ /* CLASS DESCRIPTIONS WITH FLEXBOX  */
+/* .class-descriptions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;  
+    font-size: 1.75rem;
+} */
