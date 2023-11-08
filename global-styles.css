@@ -65,8 +65,7 @@ nav a {
     text-transform: uppercase;
     color: var(--body-textcolor);
     position: relative;
-
-
+    font-family: "Josefin Sans", sans-serif;
 }
 
 nav a:hover {
@@ -139,6 +138,7 @@ nav a:hover::after {
     justify-content: flex-start;
     gap: 2em;
     margin-left: 4em;
+
 } 
 
 .footer-socials {
@@ -149,6 +149,34 @@ nav a:hover::after {
     margin-right: 4em;
 }
 
+.footer-link {
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--body-textcolor-dark);
+    cursor: pointer;
+    padding: 1em;
+    transition: .1s;
+}
+
+.footer-link:hover {
+    background-color: #E5989B;
+    border-radius: 3em;
+    transition: .1s;
+}
+
+.mail {
+    padding: 1em 2em;
+}
+
+
+/* === MEDIA QUERIES === */
+
+@media screen and (min-width: 1780px) {
+
+    body {
+        background-color: #dedcdc;
+    }
+}
 
 
 /* EXAMPLE MEDIA QUERIES

@@ -1,3 +1,10 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--body-textcolor);
+    font-family: "Josefin Sans", sans-serif;
+    min-height: 100vh;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -193,14 +200,7 @@
 
 
 
-/* === MEDIA QUERIES === */
 
-@media screen and (min-width: 1780px) {
-
-    body {
-        background-color: whitesmoke;
-    }
-}
 
 
 
