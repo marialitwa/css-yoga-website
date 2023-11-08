@@ -25,6 +25,7 @@
     --btn-bg-color: #B5838D;
     --placeholder-textcolor: #a59eb3;
     --border-radius-img: 3em;
+    --box-shadow: .3em .3em 1em rgb(224, 223, 223);
 }
 
 
@@ -64,6 +65,7 @@ nav a {
     text-transform: uppercase;
     color: var(--body-textcolor);
     position: relative;
+
 
 }
 
@@ -108,6 +110,7 @@ nav a:hover::after {
     font-weight: bold;
     transition: 0.4s;
     font-family: inherit;
+
 }
 
 .cta-btn-subscribe:hover {
