@@ -84,6 +84,19 @@ body {
     padding: 4em;
 }
 
+.block-1-img,
+.block-2-img,
+.block-3-img-left,
+.block-3-img-right {
+
+    height: auto;
+    /* => Aspect ratio will be maintained */
+    font-style: italic;
+    /* => Good for a11y => alt-text will be displayed in italic in case image does not load  */
+    shape-margin: 1rem;
+    /* => useful default setting to keep a margin around images in case I have a floating image */
+}
+
 .wrapper .block-1-img {
     grid-column: 2 / 6;
     grid-row: 2 / 12;
@@ -128,6 +141,7 @@ body {
     grid-column: 5 / 12;
     grid-row: 2 / -2;
     width: 750px;
+
     border-radius: var(--border-radius-img);
 } 
 
