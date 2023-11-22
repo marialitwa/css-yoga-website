@@ -25,6 +25,7 @@
     --btn-bg-color: #B5838D;
     --placeholder-textcolor: #a59eb3;
     --border-radius-img: 3em;
+    --box-shadow: .3em .3em 1em rgb(224, 223, 223);
 }
 
 
@@ -39,6 +40,7 @@ body {
     color: var(--body-textcolor);
     font-family: "Josefin Sans", sans-serif;
     min-height: 100vh;
+
 }
 
 
@@ -63,12 +65,36 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--body-textcolor);
+    position: relative;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 nav a:hover {
     color: var(--accent-hover);
-    transition: .2s;
 }
+
+
+nav a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 1.8em;
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+
+}
+
+nav a:hover::after {
+    color: var(--accent-hover);
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 
 
 /* BUTTONS */
@@ -84,6 +110,7 @@ nav a:hover {
     font-weight: bold;
     transition: 0.4s;
     font-family: inherit;
+
 }
 
 .cta-btn-subscribe:hover {
@@ -110,18 +137,47 @@ nav a:hover {
     display: flex;
     align-items: center; 
     justify-content: flex-start;
-    gap: 2em;
     margin-left: 4em;
+
 } 
 
 .footer-socials {
     display: flex;
     align-items: center; 
     justify-content: flex-end;
-    gap: 2em;
     margin-right: 4em;
+    gap: .5em;
 }
 
+.footer-link {
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--body-textcolor-dark);
+    cursor: pointer;
+    padding: 1em 1.5em;
+    transition: .1s;
+}
+
+.footer-link:hover {
+    background-color: var(--accent-hover);
+    color: whitesmoke;
+    border-radius: 3em;
+    transition: .1s;
+}
+
+.mail {
+    padding: 1em 2.5em;
+}
+
+
+
+/* === MEDIA QUERIES === */
+
+@media screen and (min-width: 1780px) {
+    body {
+        background-color: #dedcdc;
+    }
+}
 
 
 /* EXAMPLE MEDIA QUERIES

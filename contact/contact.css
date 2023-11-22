@@ -17,19 +17,18 @@ nav {
     align-items: center;
     gap: 4em;
     margin-bottom: 12em;
-    _border: 2px solid hotpink;
 }
 
 .contact-details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 1em;
     background-color: whitesmoke;
     border-radius: 2em;
     padding: 2.75em;
     height: 100%;
-    box-shadow: .3em .3em 1em rgb(224, 223, 223);
+    box-shadow: var(--box-shadow);
+
 }
 
 h3 {
@@ -47,6 +46,6 @@ p, a {
 
 iframe {
     border-radius: 2em;
-    box-shadow: .3em .3em 1em rgb(224, 223, 223);
+    box-shadow: var(--box-shadow);
 }
 

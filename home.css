@@ -1,8 +1,17 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--body-textcolor);
+    font-family: "Josefin Sans", sans-serif;
+    min-height: 100vh;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+
 
 /* ====== HERO SECTION ======  */
 
@@ -14,7 +23,9 @@
 
 .highlight-title {
     text-decoration: underline;
+    position: relative;
 }
+
 
 .title, .subtitle {
     text-align: center;
@@ -44,12 +55,15 @@
     text-transform: uppercase;
     margin-bottom: 10em;
     transition: 0.4s;
+
 }
 
 .cta-btn-booking:hover {
     transform: scale(1.1);
     cursor: pointer;
     transition: 0.4s;
+    text-align: center;
+
 }
 
 
@@ -68,6 +82,19 @@
     width: 80%;
     margin-bottom: 3em;
     padding: 4em;
+}
+
+.block-1-img,
+.block-2-img,
+.block-3-img-left,
+.block-3-img-right {
+
+    height: auto;
+    /* => Aspect ratio will be maintained */
+    font-style: italic;
+    /* => Good for a11y => alt-text will be displayed in italic in case image does not load  */
+    shape-margin: 1rem;
+    /* => useful default setting to keep a margin around images in case I have a floating image */
 }
 
 .wrapper .block-1-img {
@@ -114,6 +141,7 @@
     grid-column: 5 / 12;
     grid-row: 2 / -2;
     width: 750px;
+
     border-radius: var(--border-radius-img);
 } 
 
@@ -186,15 +214,17 @@
 }
 
 
-
 /* === MEDIA QUERIES === */
 
 @media screen and (min-width: 1780px) {
-
     body {
-        background-color: whitesmoke;
+        background-color: #dedcdc;
     }
 }
+
+
+
+
 
 
 

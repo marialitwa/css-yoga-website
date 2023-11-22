@@ -10,25 +10,24 @@ nav {
     letter-spacing: .05rem;
 }
 
+.table-container {
+    margin: 0 auto 12em;
+    width: 60%;  
+    border-radius: var(--border-radius-img);
+    background-color: whitesmoke;
+    box-shadow: var(--box-shadow);
+    padding: 2em;
 
+}
 
 
 table {
-    margin: 0 auto 12em;
     table-layout: fixed;
-    width: 50%;
     border-collapse: collapse;
+    width: 100%;
     text-align: left;
-    background-color: whitesmoke;
-    padding: 30em;
-    border-radius: var(--border-radius-img);
-
-    
 }
 
-thead {
-    padding: 2em;
-}
 
 th {
     padding: .5em .3em;
@@ -44,23 +43,55 @@ td {
 }
 
 
-
-
-
-
 .title-classes {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
-.class-descriptions {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 400px;  
-    font-size: 1.75rem;
+
+
+.classes-container {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    width: 40%;
+    margin: 0 auto 15em;
+    border-radius: var(--border-radius-img);
+    background-color: whitesmoke;
+    box-shadow: var(--box-shadow);
+    padding: 2em 5em 3em;
+
+}
+
+.classes-container .item-1,
+.classes-container .item-2,
+.classes-container .item-3,
+.classes-container .item-4 {
+    padding: 1em;
+    align-self: start;
+}
+
+
+.classes-container .item-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.classes-container .item-4 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.classes-container .item-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;    
+}
+
+.classes-container .item-3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .class-descriptions h3 {
@@ -70,10 +101,22 @@ td {
 }
 
 .class-descriptions p {
-    margin-bottom: 2em;
     color: var(--body-textcolor);
     font-weight: 300;
     font-size: 1.15rem;
-    margin-bottom: 4em;
 
 }
+
+
+
+ /* CLASS DESCRIPTIONS WITH FLEXBOX  */
+/* .class-descriptions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;  
+    font-size: 1.75rem;
+} */

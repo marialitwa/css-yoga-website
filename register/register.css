@@ -37,7 +37,7 @@ select {
 .register-form {
     width: 522px;
     height: 1870px;
-    margin: 0 auto;
+    margin: 0 auto 15em;
     background-color: whitesmoke;
     padding: 3em;
     border-radius: 4rem;   
