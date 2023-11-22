@@ -177,7 +177,6 @@ body {
     grid-column: 4 / 10;
     grid-row: 1 / -1;
     background-color: var(--block-3-bg);
-    width: 650px;
     height: 600px;
     border-bottom: 5px solid var(--block-3-border);
     border-radius: var(--border-radius-img);
